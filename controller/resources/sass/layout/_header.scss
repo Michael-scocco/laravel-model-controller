@@ -1,0 +1,13 @@
+header {
+
+    background-color: $lapras-blue;
+    color: $lugia-white;
+    height: 80px;
+
+    .header-top {
+        @include container(60%);
+        height: 100%;
+        @include flex(row,space-between,center);
+        color: inherit;
+    }
+}

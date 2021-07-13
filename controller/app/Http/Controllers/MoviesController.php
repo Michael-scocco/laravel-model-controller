@@ -1,0 +1,21 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+use App\Movies;
+
+class MoviesController extends Controller
+{
+    public function home() {
+
+        $movies = Movies::all();
+        return view('pages.home', compact('movies'));
+    }
+
+    public function movie($id) {
+
+        $movie = Movies::findOrFail($id);
+        return view('pages.movie', compact('movie'));
+    }
+}

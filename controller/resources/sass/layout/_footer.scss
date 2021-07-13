@@ -1,0 +1,14 @@
+
+footer {
+
+    background-color: $lapras-blue;
+    color: $lugia-white;
+    height: 80px;
+
+    .footer-top {
+        @include container(60%);
+        height: 100%;
+        @include flex(row,center,center);
+        color: inherit;
+    }
+}
